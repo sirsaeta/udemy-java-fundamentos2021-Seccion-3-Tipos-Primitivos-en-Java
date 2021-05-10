@@ -18,6 +18,7 @@ public class Main {
         varDouble();
         InferenciasVarYTiposPrimitivos();
         TipoChat();
+        TipoBoolean();
     }
 
     public static void varByte() {
@@ -121,5 +122,50 @@ public class Main {
 
         var miCadena2 = "saeta";
         System.out.println("miCadena2 = " + miCadena2);
+    }
+
+    public static void TipoBoolean() {
+        //Tipos Primitivos tipo boolean
+        boolean varBoolean = true;
+        System.out.println("varBoolean = " + varBoolean);
+        ValidarBandera(varBoolean);
+        varBoolean = false;
+        System.out.println("varBoolean = " + varBoolean);
+        ValidarBandera(varBoolean);
+        int edad = 30;
+        var esAdulto = edad >= 18;
+        ValidadEdadBoolean(esAdulto);
+        ValidadEdad(edad);
+        edad = 10;
+        esAdulto = edad >= 18;
+        ValidadEdadBoolean(esAdulto);
+        ValidadEdad(edad);
+    }
+
+    public static void ValidarBandera(boolean varBoolean) {
+        if (varBoolean) {
+            System.out.println("La bandera es verdadera");
+        }
+        else {
+            System.out.println("La bandera es falsa");
+        }
+    }
+
+    public static void ValidadEdadBoolean(boolean esAdulto){
+        if (esAdulto) {
+            System.out.println("Eres mayor de edad");
+        }
+        else {
+            System.out.println("Eres menor de edad");
+        }
+    }
+
+    public static void ValidadEdad(int edad){
+        if (edad >= 18) {
+            System.out.println("Eres mayor de edad");
+        }
+        else {
+            System.out.println("Eres menor de edad");
+        }
     }
 }
