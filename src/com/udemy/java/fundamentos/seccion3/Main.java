@@ -17,6 +17,7 @@ public class Main {
         varFloat();
         varDouble();
         InferenciasVarYTiposPrimitivos();
+        TipoChat();
     }
 
     public static void varByte() {
@@ -81,5 +82,44 @@ public class Main {
 
         var numeroFloat = 10.0F;//solo para F=Float L=Long, D=Double
         System.out.println("numeroFloat = " + numeroFloat);
+    }
+
+    public static void TipoChat() {
+        //Tipos Primitivos tipo char
+        char miCaracter = 'a';
+        System.out.println("miCaracter = " + miCaracter);
+
+        char varChar = '\u0021';
+        System.out.println("varChar = " + varChar);
+
+        char varCharDecimal = 33;
+        System.out.println("varCharDecimal = " + varCharDecimal);
+
+        char varCharSimbolo = '!';
+        System.out.println("varCharSimbolo = " + varCharSimbolo);
+
+        var varChar2 = '\u0021';
+        System.out.println("varChar2 = " + varChar2);
+
+        var varCharDecimal2 = 33;
+        System.out.println("varCharDecimal2 = " + varCharDecimal2);
+
+        var varCharSimbolo2 = '!';
+        System.out.println("varCharSimbolo2 = " + varCharSimbolo2);
+
+        int variableEnteraSimbolo = '!';
+        System.out.println("variableEnteraSimbolo = " + variableEnteraSimbolo);
+
+        int letra = 'a';
+        System.out.println("letra = " + letra);
+
+        letra = 'A';
+        System.out.println("letra = " + letra);
+
+        String miCadena = "saeta";
+        System.out.println("miCadena = " + miCadena);
+
+        var miCadena2 = "saeta";
+        System.out.println("miCadena2 = " + miCadena2);
     }
 }
