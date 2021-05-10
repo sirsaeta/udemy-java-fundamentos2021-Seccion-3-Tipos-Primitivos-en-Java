@@ -57,18 +57,16 @@ public class Main {
     public static void varFloat() {
         System.out.println("valor minimo float: " + Float.MIN_VALUE);
         System.out.println("valor maximo float: " + Float.MAX_VALUE);
-        float numeroFloat = 10;
+        float numeroFloat = 10.0F;
         System.out.println("numeroFloat = " + numeroFloat);
-        numeroFloat = (float)129;//para convertirlo
+        numeroFloat = (float)3.4028236E38;//para convertirlo
         System.out.println("numeroFloat = " + numeroFloat);
     }
 
     public static void varDouble() {
         System.out.println("valor minimo Double: " + Double.MIN_VALUE);
         System.out.println("valor maximo Double: " + Double.MAX_VALUE);
-        double numeroDouble = 10;
-        System.out.println("numeroInteger = " + numeroDouble);
-        numeroDouble = (double)129;//para convertirlo
+        double numeroDouble = 10.5;
         System.out.println("numeroInteger = " + numeroDouble);
     }
 }
