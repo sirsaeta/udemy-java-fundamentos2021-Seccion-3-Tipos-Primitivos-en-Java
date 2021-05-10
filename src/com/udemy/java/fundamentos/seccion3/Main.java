@@ -19,7 +19,7 @@ public class Main {
         varFloat();
         varDouble();
         InferenciasVarYTiposPrimitivos();
-        TipoChat();
+        TipoChar();
         TipoBoolean();
         ConvertirTiposPrimitivos();
     }
@@ -93,7 +93,7 @@ public class Main {
         System.out.println("numeroFloat = " + numeroFloat);
     }
 
-    public static void TipoChat() {
+    public static void TipoChar() {
         //Tipos Primitivos tipo char
         char miCaracter = 'a';
         System.out.println("miCaracter = " + miCaracter);
@@ -194,5 +194,18 @@ public class Main {
         System.out.println("Proporciona tu edad");
         edad = Integer.parseInt(console.nextLine());
         System.out.println("edad = " + edad);
+
+        var edadTexto = String.valueOf(edad);
+        System.out.println("edadTexto = " + edadTexto);
+
+        var cadena = "hola";
+        var caracter = cadena.charAt(2);
+        System.out.println("caracter = " + caracter);
+        caracter = cadena.charAt(0);
+        System.out.println("caracter = " + caracter);
+
+        System.out.println("Proporciona un caracter");
+        caracter = console.nextLine().charAt(0);
+        System.out.println("caracter = " + caracter);
     }
 }
