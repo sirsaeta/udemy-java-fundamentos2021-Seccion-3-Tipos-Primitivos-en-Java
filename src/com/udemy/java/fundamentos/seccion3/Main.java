@@ -16,6 +16,7 @@ public class Main {
         varLong();
         varFloat();
         varDouble();
+        InferenciasVarYTiposPrimitivos();
     }
 
     public static void varByte() {
@@ -68,5 +69,17 @@ public class Main {
         System.out.println("valor maximo Double: " + Double.MAX_VALUE);
         double numeroDouble = 10.5;
         System.out.println("numeroInteger = " + numeroDouble);
+    }
+
+    public static void InferenciasVarYTiposPrimitivos() {
+        //Inferencia de Tipos con Var y tipos Primitivos
+        var numeroEntero = 10;
+        System.out.println("numeroEntero = " + numeroEntero);
+
+        var numeroDouble = 10.0;
+        System.out.println("numeroDouble = " + numeroDouble);
+
+        var numeroFloat = 10.0F;//solo para F=Float L=Long, D=Double
+        System.out.println("numeroFloat = " + numeroFloat);
     }
 }
