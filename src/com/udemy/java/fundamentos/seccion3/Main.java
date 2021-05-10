@@ -1,5 +1,7 @@
 package com.udemy.java.fundamentos.seccion3;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -19,6 +21,7 @@ public class Main {
         InferenciasVarYTiposPrimitivos();
         TipoChat();
         TipoBoolean();
+        ConvertirTiposPrimitivos();
     }
 
     public static void varByte() {
@@ -44,6 +47,11 @@ public class Main {
         System.out.println("valor maximo int: " + Integer.MAX_VALUE);
         int numeroInteger = 10;
         System.out.println("numeroInteger = " + numeroInteger);
+        System.out.println("numeroInteger = " + (numeroInteger+1));
+        System.out.println("numeroInteger = " + numeroInteger++);
+        System.out.println("numeroInteger = " + ++numeroInteger);
+        System.out.println("numeroInteger = " + numeroInteger--);
+        System.out.println("numeroInteger = " + --numeroInteger);
         numeroInteger = (int) 2147483649L;//la conversión no soluciona el problema de exeder el numero entero, se usa la lideteral Long
         System.out.println("numeroInteger = " + numeroInteger);
     }
@@ -132,11 +140,15 @@ public class Main {
         varBoolean = false;
         System.out.println("varBoolean = " + varBoolean);
         ValidarBandera(varBoolean);
-        int edad = 30;
+
+        Scanner console = new Scanner(System.in);
+        System.out.println("Proporciona tu edad");
+        int edad = Integer.parseInt(console.nextLine());
         var esAdulto = edad >= 18;
         ValidadEdadBoolean(esAdulto);
         ValidadEdad(edad);
-        edad = 10;
+        System.out.println("Proporciona tu edad");
+        edad = Integer.parseInt(console.nextLine());
         esAdulto = edad >= 18;
         ValidadEdadBoolean(esAdulto);
         ValidadEdad(edad);
@@ -167,5 +179,20 @@ public class Main {
         else {
             System.out.println("Eres menor de edad");
         }
+    }
+
+    public static void ConvertirTiposPrimitivos() {
+        //Conversión de Tipos Primitivos en Java - parte 1
+        var edad = Integer.parseInt("20");
+        System.out.println("edad = " + edad);
+
+        var valorPI = Double.parseDouble("3.1416");
+        System.out.println("valorPI = " + valorPI);
+
+        //Pedir un valor con Scanner
+        Scanner console = new Scanner(System.in);
+        System.out.println("Proporciona tu edad");
+        edad = Integer.parseInt(console.nextLine());
+        System.out.println("edad = " + edad);
     }
 }
